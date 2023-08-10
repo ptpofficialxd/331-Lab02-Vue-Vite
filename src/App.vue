@@ -5,8 +5,10 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink class="link" to="/">Home</RouterLink>
+      <RouterLink class="link" to="/about">About</RouterLink>
+      <RouterLink class="link" to="/organizer">Organizer</RouterLink>
+      <RouterLink class="link" to="/student">Student</RouterLink>
     </nav>
   </header>
   <RouterView />
@@ -19,6 +21,10 @@ import { RouterLink, RouterView } from 'vue-router'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.link {
+  margin-right: 10px;
 }
 
 nav {
